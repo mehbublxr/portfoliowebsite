@@ -1,0 +1,400 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.toggle-button {
+    position: absolute;
+    top: 1.20rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    margin-right: 2rem;
+    margin-top: 1.3rem;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* molile media */
+@media (max-width: 600px) {
+
+    .navbar {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0c035e;
+        color: white;
+    }
+    .navbar-links ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-links li {
+        list-style: none;
+        font-size: 1.5rem;
+    }
+
+    .navbar-links li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: .5rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 2rem;
+
+    }
+
+    .left .name {
+        padding-bottom: 10px;
+        font-size: 2.2rem;
+    }
+
+    .left img {
+        width: 3.3rem;
+    }
+
+    /* Now the hamburgur menu will be visible */
+    .toggle-button {
+        display: flex;
+    }
+
+
+    /* Now the links will disapper and */
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+        margin-bottom: 1.3rem;
+        font-size: 1rem;
+    }
+
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+/* responsive for main section */
+.home .content h2 {
+    font-size: 3rem;
+}
+.passion{
+  font-size: 2.5rem;
+}
+
+.home .content p {
+    font-size: 2.5rem;
+    padding: 0;
+}
+
+.heading p {
+    font-size: 2rem;
+    padding: 0 15%;
+}
+#element{
+  font-size: 2.5rem;
+  margin-left: 0;
+}
+.about .row .image img {
+    padding: 0;
+}
+.about .row .image img {
+    width: 20rem;
+    height: auto;
+    border-radius: 7%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
+    mix-blend-mode: luminosity;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .about .row .content .tag {
+    font-size: 2rem;
+    font-weight: 600;
+  
+  }
+  .about .row .content p {
+    font-size: 2rem;
+    padding:0;
+    margin-top: 1rem;
+    text-align: center;
+    text-transform: none;
+ font-weight: lighter;
+    font:sans-serif;
+  }
+
+
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding:0 8rem;
+    background: #3d063e;
+    max-height: 900px;
+ min-width: 100%;
+
+  }
+
+.skilldiv{
+    display: flex;flex-direction: row;
+}
+
+.skillcont1 {
+    display: inline-block;
+    padding:0 3px;
+    margin-top: 1rem;
+    animation: imgUp 0.7s linear infinite alternate;
+  }
+  
+  .skillcont2 {
+    display: inline-block;
+    animation: imgUp 0.7s linear infinite alternate;
+  }
+  
+  .skillcont3 {
+   display: inline-block;
+    animation: imgUp 0.7s linear infinite alternate;
+  }
+  
+  .skill h1 {
+    background-color: #1c00ee;
+    margin:1.2rem  2rem;
+    border-radius: 0 1.3rem;
+    font-size:.7rem;
+  }
+
+  .project1 img {
+    width: 30rem;
+  }
+  .project1 {
+   display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contact .container .content {
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 2rem;
+  }
+  .contact .content .image-box {
+    max-width: 100%;
+  }
+  
+  .contact .content .image-box img {
+    width: 100%;
+    height: 24rem;
+    position: relative;
+  }
+
+
+.contact {
+    background: #7628a2;
+    min-height: 90vh;
+  }
+.contact .container {
+    text-align: center;
+    max-height: 750px;
+    width: 100%;
+    background: #7628a2;
+    border-radius:0;
+    margin: auto;
+  }
+  .contact .content form {
+    width: 100%;
+    margin-right: 3rem;
+  }
+.heading p{
+    padding:1rem 4rem;
+}
+}
+
+/* responsive for tablet  */
+
+@media (max-width: 1050px) {
+    @media (min-width: 600px) {
+
+    .navbar {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #350445;
+        color: white;
+    }
+
+
+    .navbar-links ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-links li {
+        list-style: none;
+        font-size: 1.5rem;
+    }
+
+    .navbar-links li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: .5rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 2rem;
+
+    }
+
+    .left .name {
+        padding-bottom: 10px;
+        font-size: 2.2rem;
+    }
+
+    .left img {
+        width: 3.3rem;
+    } .skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        padding:0 8rem;
+        background: #3d063e;
+        max-height: 900px;
+     min-width: 100%;
+    
+      }
+    
+    .skilldiv{
+        display: flex;flex-direction: row;
+    }
+    
+    .skillcont1 {
+        display: inline-block;
+        padding:0 3px;
+        margin-top: 1rem;
+        animation: imgUp 0.7s linear infinite alternate;
+      }
+      
+      .skillcont2 {
+        display: inline-block;
+        animation: imgUp 0.7s linear infinite alternate;
+      }
+      
+      .skillcont3 {
+       display: inline-block;
+        animation: imgUp 0.7s linear infinite alternate;
+      }
+      
+      .skill h1 {
+        background-color: #1c00ee;
+        margin:1.2rem  2rem;
+        border-radius: 0 1.3rem;
+        font-size:1rem;
+      }
+      .project1 {
+        display: inline-block;
+         align-items: center;
+         justify-content: center;
+         margin: 0 4rem;
+       }
+
+
+
+       .project1 img{
+        display: inline-block;
+         align-items: center;
+         justify-content: center;
+         margin: 0 4rem;
+       }
+       
+       
+  .contact .container .content {
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 2rem;
+  }
+  .contact .content .image-box {
+    max-width: 100%;
+  }
+  
+  .contact .content .image-box img {
+    width: 100%;
+    height: 24rem;
+    position: relative;
+  }
+
+
+.contact {
+    background: #7628a2;
+    min-height: 90vh;
+  }
+.contact .container {
+    text-align: center;
+    max-height: 750px;
+    width: 100%;
+    background: #7628a2;
+    border-radius:0;
+    margin: auto;
+  }
+  .contact .content form {
+    width: 100%;
+    margin-right: 3.5rem;
+  }
+.heading p{
+    padding:1rem 4rem;
+}
+
+.contact .container .content {
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 3rem;
+  }
+  .about .row .content p {
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-transform: none;
+    font-weight: 200;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+  }
+
+}
+}
